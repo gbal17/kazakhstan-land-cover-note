@@ -29,13 +29,24 @@ The site appears a minute or two later at
 
     https://gbal17.github.io/kazakhstan-land-cover-note/
 
-**That URL is already wired into the application.** `NOTE_URL` in
-`03_Technical_inputs/gee/03_LC_Products_Compare_2023.js` points at it, so the
-app title links there once you republish. If you use a different repository
+**That URL is already wired into the application.** `NOTE_URL` points at it in every version of the
+app script from `03_LC_Products_Compare_2023.js` to `17_LC_Products_Compare_2023_AllVariants_PanelToggle.js`, so the app title
+links there with no change needed. If you use a different repository
 name, the one line has to change with it.
 
-To update the note later, rebuild it with `../short_note_build/build.py`, copy
+To update the note later, rebuild it with `../short_note_build/build2.py`, copy
 the result over `index.html`, then commit and push. Pages redeploys itself.
+
+    cd ~/Desktop/K/Workshop_KAZ_2026/06_Outputs/short_note_build
+    python3 build2.py ../KAZ_LC_products_short_note.html
+    cp ../KAZ_LC_products_short_note.html ../github_pages/index.html
+    cd ../github_pages && git add index.html && git commit -m "..." && git push
+
+`build.py` built the older three-product note and is kept only for reference;
+`build2.py` is the current one. It is bilingual: the page opens in English and
+the two buttons at the top switch to Russian, so one URL serves both. Adding
+`?lang=ru` opens it in Russian directly, which is the link to send to Kazakh
+colleagues.
 
 ## Note
 
