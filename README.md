@@ -34,19 +34,25 @@ app script from `03_LC_Products_Compare_2023.js` to `17_LC_Products_Compare_2023
 links there with no change needed. If you use a different repository
 name, the one line has to change with it.
 
-To update the note later, rebuild it with `../short_note_build/build2.py`, copy
+To update the note later, rebuild it with `../short_note_build/build3.py`, copy
 the result over `index.html`, then commit and push. Pages redeploys itself.
 
     cd ~/Desktop/K/Workshop_KAZ_2026/06_Outputs/short_note_build
-    python3 build2.py ../KAZ_LC_products_short_note.html
+    python3 build3.py ../KAZ_LC_products_short_note.html
     cp ../KAZ_LC_products_short_note.html ../github_pages/index.html
     cd ../github_pages && git add index.html && git commit -m "..." && git push
 
-`build.py` built the older three-product note and is kept only for reference;
-`build2.py` is the current one. It is bilingual: the page opens in English and
-the two buttons at the top switch to Russian, so one URL serves both. Adding
-`?lang=ru` opens it in Russian directly, which is the link to send to Kazakh
-colleagues.
+`build.py` built the three-product note and `build2.py` the bilingual one;
+both are kept only for reference. `build3.py` is the current builder. The page
+is trilingual: it opens in English and the three buttons at the top switch to
+Russian and Kazakh, so one URL serves all three. `?lang=ru` and `?lang=kk` open
+it directly in that language.
+
+The Russian class names come from the Russian edition of the PRAIS4 Reporting
+Manual. The Kazakh ones have no official source — the Convention publishes no
+Kazakh edition — so they are a translation, the page says so, and the
+seven-class table shows English, Russian and Kazakh side by side in every
+language so a Kazakh-speaking colleague can check them quickly.
 
 ## Note
 

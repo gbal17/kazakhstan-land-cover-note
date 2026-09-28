@@ -1,0 +1,15 @@
+Add Kazakh: the note is now trilingual EN / RU / KK
+
+Third language button beside English and Русский. Same twelve figures and
+the same figures-read-from-the-legend-panel rule; 138 strings in each of
+the three languages.
+
+- Russian class names follow the Russian edition of the PRAIS4 Reporting
+  Manual and can be quoted as the Convention's own wording
+- Kazakh has no official UNCCD source: there is no Kazakh edition of the
+  Manual, so the Kazakh is a translation offered for review, and the page
+  says so in all three languages
+- the seven-class table now shows English, Russian and Kazakh side by side
+  whatever language is selected, so the Kazakh column can be checked in a
+  couple of minutes
+- ?lang=ru and ?lang=kk open the page directly in that language
